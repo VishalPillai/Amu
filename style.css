@@ -1,0 +1,145 @@
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Bellota Text";
+    text-shadow: 2.5px 0.5px 3px #c22222;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(219, 147, 159);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    /* Smooth scrolling */
+}
+button{
+    font-family: "Bellota Text";
+    font-size:20px;
+    border-color:rgba(255, 255, 255, 0);
+    border-radius:10px;
+    padding:8px;
+    align-self: center;
+}
+
+/* Static Background */
+body {
+    background-image: url("img1.jpg");
+    /* Replace with your image */
+    background-attachment: fixed;
+    /* Keeps the background static */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text Sections */
+.text-section {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade-in/fade-out effect */
+    transform: translateY(50px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+}
+
+.text-section.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    display: flex;
+    
+}
+
+.text-section.active button {
+    margin-top: 20px; /* Adds space between text and button */
+    align-self: center; /* Centers button under the text */
+    display: block; /* Ensures it's visible */
+    background-color:#c43061;
+    color:white;
+}
+
+
+/* Text Styling */
+h1,
+h2 {
+    background-color: rgba(131, 61, 61, 0.568);
+    /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    font-size:30px !important;
+
+    /* Limits text width for better readability */
+}
+
+h1 {
+    font-size: 2.5em !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* Typewriter font */
+
+.watermark {
+    position: fixed;
+    top: 0;
+    width: 50px;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive; /* Typewriter-style font */
+    color: rgba(255, 0, 60, 0.7); /* Darker pink for better visibility */
+    writing-mode: vertical-rl; /* Makes text go top to bottom */
+    text-orientation: upright;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none; /* Doesn't interfere with swipes/clicks */
+    animation: shimmer 3s infinite alternate; /* Glow effect */
+}
+
+.left {
+    left: 15px;
+}
+
+.right {
+    right: 15px;
+}
+
+@keyframes shimmer {
+    0% { opacity: 0.3; text-shadow: 0 0 5px rgba(255, 0, 60, 0.3); }
+    50% { opacity: 1; text-shadow: 0 0 10px rgba(255, 0, 60, 0.7); }
+    100% { opacity: 0.3; text-shadow: 0 0 5px rgba(255, 0, 60, 0.3); }
+}
+#nextButton {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#bigButton {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#bigButton:hover {
+    background-color: hotpink;
+}

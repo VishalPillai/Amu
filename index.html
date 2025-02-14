@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For my BBG</title>
+    <link href='style.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=MNld5spl1GSx&format=png&color=000000" type="image/icon">
+    <script defer src="index.js"></script>
+    <style>
+        body {
+            font-family: 'Bellota Text', cursive;
+            background-color: #ffebf3;
+            text-align: center;
+        }
+
+        .text-section {
+            display: none;
+        }
+
+        .text-section.active {
+            display: block;
+        }
+
+        .text-container {
+            min-height: 200px;
+            font-size: 24px;
+            white-space: pre-wrap;
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Watermark on the left -->
+<div class="watermark left">ILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOU</div>
+
+<!-- Watermark on the right -->
+<div class="watermark right">ILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOUILOVEYOU</div>
+
+    <center>
+        <div class="text-section active">
+            <h1 class="text-container" id="text1"></h1>
+        </div>
+
+        <div class="text-section">
+            <h2 class="text-container" id="text2"></h2>
+        </div>
+
+        <div class="text-section">
+            <h2 class="text-container" id="text3"></h2>
+        </div>
+
+        <div class="text-section">
+            <h2 class="text-container" id="text4"></h2>
+        </div>
+
+        <div class="text-section">
+            <h2 class="text-container" id="text5"></h2>
+            <button  onclick="nextpage()">Next →</button>
+        </div>
+    </center>
